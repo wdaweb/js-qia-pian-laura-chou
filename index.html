@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/Roboto_Mono.css">
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/sweetalert2.all.min.js"></script>
-    <title>Document</title>
+    <title>翻象棋</title>
     <style>
         * {
             margin: 0;
@@ -36,7 +36,7 @@
         .top {
             height: 15%;
             width: 100%;
-            background-image: url('images/bannerbg.png');
+            background-image: url('images/topbg.jpg');
             background-repeat: no-repeat;
             background-size: 100% 100%;
             font-size: 24px;
@@ -45,20 +45,19 @@
         .nst_font {
             font-family: "標楷體";
             font-size: 40px;
-            color: blue;
+            color:#ECFFFF;
             width: 10%;
         }
 
         .score-style {
             width: 10%;
             font-size: 50px;
-            color: green;
-            border-left: 2px solid yellowgreen;
-            border-right: 2px solid yellowgreen;
+            color: #fff;
         }
 
         #timer {
             font-size: 35px;
+            color: #fff;
         }
 
         .chess_board {
@@ -213,6 +212,7 @@
                     imageUrl: 'images/rule.png',
                     imageWidth: 800,
                     imageHeight: 400,
+                    html: '<h3 style="text-align:left;">翻開兩個圖案相同、顏色相同的象棋相互抵銷</h3><h3 style="text-align:left;">有兩個圖案例外，可以顏色不同，但圖案要相同</h3>',
                     confirmButtonText: '確定',
                 }).then((result) => {
                     const bgm = new Audio();
